@@ -11,7 +11,7 @@ public class Laptop {
     private String brand;
 
     //------------mapping---------------
-    @OneToOne(mappedBy = "laptop") // mapped to field in Student class, where this Private Laptop laptop//
+    @OneToOne(mappedBy = "laptop") // mapped to field in Student class, where this Private Laptop
     private Student student;
 
     //------------mapping---------------

@@ -10,7 +10,7 @@ public class AppInitializer {
 
             Laptop laptop= new Laptop();
             laptop.setBrand("lenovo");
-            session.save(laptop);
+            //session.save(laptop);
 
             Student student =new Student() ;
             student.setStudentName("Lakmal");

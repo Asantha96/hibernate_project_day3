@@ -11,9 +11,9 @@ public class Student {
     private String studentName;
 
     //........................mapping.....................
-    @OneToOne
-    @JoinColumn(name = "laptop_id")
-    private Laptop laptop;
+    @OneToOne(cascade = CascadeType.ALL)//parent class(base class)
+    @JoinColumn(name = "laptop_id") //that means adding a column to the student table
+    private Laptop laptop;//this laptop name take as the mapped by laptop class
     //........................mapping.....................
 
 
